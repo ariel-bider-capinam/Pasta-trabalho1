@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulário</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Formulário para namorada do arielzin</h1>
+    <form id="myForm" onsubmit="return false;">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="age">Idade:</label>
+      <input type="number" id="age" name="age" required>
+
+      <label>Sexo:</label>
+      <div class="radio-group">
+        <input type="radio" name="gender" value="masculino" id="masculino" onchange="changeBackground()"> Masculino
+        <input type="radio" name="gender" value="feminino" id="feminino" onchange="changeBackground()"> Feminino
+        <p id="gender-message"></p>
+      </div>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="dob">Data de Nascimento:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="favorite-team">Time do Coração:</label>
+      <input type="text" id="favorite-team" name="favorite-team" oninput="checkTeam()">
+      <p id="team-message"></p>
+
+      <label>Hobbies:</label>
+      <div class="checkbox-group">
+        <input type="checkbox" name="hobbies" value="esporte"> Esporte
+        <input type="checkbox" name="hobbies" value="leitura"> Leitura
+        <input type="checkbox" name="hobbies" value="viagem"> Viagem
+        <input type="checkbox" name="hobbies" value="musica"> Música
+        <input type="checkbox" name="hobbies" value="outro"> Outro
+      </div>
+
+      <button type="button" onclick="submitForm()">Enviar</button>
+    </form>
+  </div>
+
+  <script src="meujs.js"></script>
+</body>
+</html>

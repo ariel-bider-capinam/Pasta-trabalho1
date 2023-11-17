@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylemenu.css">
+    <script src="menu.js"></script>
+    <title> Menu Acoffe Co</title> 
+    </head>
+    <body>
+
+    <header>
+        <h1>Acoffe Co</h1>
+        <p>Sua cafeteria favorita!</p>
+    </header>
+
+    <section>
+        <div class="product" id="product1">
+            <img src="img/download (3).jpg" alt="Café com leite">
+            <h2>Café com leite</h2>
+            <p>Um classico para os amantes de café.</p>
+            <p>R$ 4,99</p>
+            <button onclick="addToCart('Café com leite', 4.99)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="product" id="product2">
+            <img src="img/download (4).jpg" alt="Café com bolo">
+            <h2>Café com bolo</h2>
+            <p>Um delicioso bolo com um café de sua preferencia</p>
+            <p>R$ 7,99</p>
+            <button onclick="addToCart('café com bolo', 7.99)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="product" id="product3">
+            <img src="img/download (6).jpg" alt="café com cokkie">
+            <h2>café com cokkie</h2>
+            <p>cokkie delicioso com um café feito na hora.</p>
+            <p>R$ 6,99</p>
+            <button onclick="addToCart('café com cokkie', 6.99)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="product" id="product4">
+            <img src="img/download (5).jpg" alt="milk-shake de café">
+            <h2>Milk-shaeke de café</h2>
+            <p>Para os amamntes de café gelado.</p>
+            <p>R$ 10,00</p>
+            <button onclick="addToCart('milkshake de café', 10.00)">Adicionar ao Carrinho</button>
+        </div>
+    </section>
+
+    <div class="cart" onclick="viewCart()">Carrinho</div>
+</body>
+</html>
